@@ -27,7 +27,6 @@ namespace CustomerRegistration.Controllers
         [Route("Register")]
         [HttpPost]
         [ValidateModel]
-
         public async Task<IActionResult> Register([FromBody] RegisterCustomerModel registerCustomerModel)
         {
             var dbModel = new DB.RegisterCustomerModel
