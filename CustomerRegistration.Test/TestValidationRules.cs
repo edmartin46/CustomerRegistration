@@ -58,6 +58,46 @@ namespace CustomerRegistration.Test
             SimulateValidation(request);
             Assert.AreEqual(_customerController.ModelState.IsValid, false);
         }
+        [TestMethod]
+        public void Check_Bad_Email_Fails()
+        {
+            var request = new RegisterCustomerModel()
+            {
+                FirstName = "Edw",
+                LastName = "Martin",
+                DateOfBirth = DateTime.Parse("2000-01-01"),
+                Email = "abc.def.com",
+                ReferenceNumber = "AA-123456"
+            };
+            SimulateValidation(request);
+            Assert.AreEqual(_customerController.ModelState.IsValid, false);
+        }
+        [TestMethod]
+        public void Check_OK_If_Email_Blank_And_DOB_Provided()
+        {
+            var request = new RegisterCustomerModel()
+            {
+                FirstName = "Edw",
+                LastName = "Martin",
+                DateOfBirth = DateTime.Parse("2000-01-01"),                
+                ReferenceNumber = "AA-123456"
+            };
+            SimulateValidation(request);
+            Assert.AreEqual(_customerController.ModelState.IsValid, true);
+        }
+        [TestMethod]
+        public void Check_OK_If_Dob_Blank_And_Email_Provided()
+        {
+            var request = new RegisterCustomerModel()
+            {
+                FirstName = "Edw",
+                LastName = "Martin",                
+                Email = "abc@def.com",
+                ReferenceNumber = "AA-123456"
+            };
+            SimulateValidation(request);
+            Assert.AreEqual(_customerController.ModelState.IsValid, true);
+        }
 
 
         private void SimulateValidation(object model)

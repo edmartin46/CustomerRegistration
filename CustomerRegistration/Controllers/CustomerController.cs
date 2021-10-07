@@ -54,6 +54,7 @@ namespace CustomerRegistration.Controllers
         [ValidateModel]
         public async Task<IActionResult> Register([FromBody] RegisterCustomerModel registerCustomerModel)
         {
+            //Should use a tool like automapper here.
             var dbModel = new DB.RegisterCustomerModel
             {
                 DateOfBirth = registerCustomerModel.DateOfBirth,
