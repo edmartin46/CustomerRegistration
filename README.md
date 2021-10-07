@@ -22,6 +22,6 @@ A single endpoint is provided
   More validation. E.g. duplication of Policy numbers?   
   Improve regular expressions  
   Consider US Dates  
-  More unit tests.  
+  More unit tests  
   Use Long for RegistrationId  
   Add AutoMapper  
