@@ -12,16 +12,16 @@ It use uses SqlLite as the database
 A single endpoint is provided
 
 To Run
-  Download the app
-  Download Nuget packages
-  Start in Visual Studio
-  Database should be created automatically
-  Swagger screen should load automatically
+  Download the app  
+  Download Nuget packages  
+  Start in Visual Studio  
+  Database should be created automatically  
+  Swagger screen should load automatically  
     
-ToDo
-  More validation. E.g. duplication of Policy numbers? 
-  Improve regular expressions
-  Consider US Dates
-  More unit tests.
-  Use Long for RegistrationId
-  Add AutoMapper
+ToDo  
+  More validation. E.g. duplication of Policy numbers?   
+  Improve regular expressions  
+  Consider US Dates  
+  More unit tests.  
+  Use Long for RegistrationId  
+  Add AutoMapper  
