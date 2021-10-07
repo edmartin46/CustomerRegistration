@@ -11,7 +11,7 @@ This application demonstrates the use of the following technologies:
 It use uses SqlLite as the database
 A single endpoint is provided
 
-To Run
+<b>To Run</b>  
   Download the app  
   Download Nuget packages  
   Start in Visual Studio  
