@@ -31,7 +31,7 @@ namespace CustomerRegistration.Test
             _customerController = new CustomerController(_logger.Object, _customerRegistrationDBService.Object);
         }
         [TestMethod]
-        public async Task Check_A_Good_Request_Passes()
+        public void Check_A_Good_Request_Passes()
         {
             var request = new RegisterCustomerModel()
             {
@@ -45,7 +45,7 @@ namespace CustomerRegistration.Test
             Assert.AreEqual(_customerController.ModelState.IsValid, true);
         }
         [TestMethod]
-        public async Task Check_A_Short_First_Name_Fails()
+        public void Check_A_Short_First_Name_Fails()
         {        
             var request = new RegisterCustomerModel()
             {
