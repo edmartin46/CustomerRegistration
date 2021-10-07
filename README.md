@@ -1,5 +1,5 @@
 # CustomerRegistration
-Customer Registration Sample App  
+<b>Customer Registration Sample App</b>  
 This application demonstrates the use of the following technologies:  
   Entity Framework  
   Entity Framework migrations and code first  
@@ -8,7 +8,7 @@ This application demonstrates the use of the following technologies:
   Web.Api  
   Documentation using Swashbuckle/Swagger  
   
-It use uses SqlLite as the database
+It use uses SqlLite as the database  
 A single endpoint is provided
 
 <b>To Run</b>  
@@ -18,7 +18,7 @@ A single endpoint is provided
   Database should be created automatically  
   Swagger screen should load automatically  
     
-ToDo  
+<b>ToDo</b>  
   More validation. E.g. duplication of Policy numbers?   
   Improve regular expressions  
   Consider US Dates  
