@@ -24,3 +24,4 @@ ToDo
   Consider US Dates
   More unit tests.
   Use Long for RegistrationId
+  Add AutoMapper
