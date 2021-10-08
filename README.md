@@ -24,4 +24,5 @@ A single endpoint is provided
   Consider US Dates  
   More unit tests  
   Use Long for RegistrationId  
-  Add AutoMapper  
+  Add AutoMapper
+  Prefix all projects with AF.
